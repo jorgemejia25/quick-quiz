@@ -86,19 +86,21 @@ export function QuizGame({ quizData, randomOrder, onComplete }: QuizGameProps) {
      */
     setResults((prev) => [...prev, result]);
     setShowResult(true);
+  };
 
-    // Auto avanza después de 2.5 segundos
-    setTimeout(() => {
-      if (currentQuestionIndex < questions.length - 1) {
-        setCurrentQuestionIndex((prev) => prev + 1);
-        setSelectedAnswer(null);
-        setShowResult(false);
-        setStartTime(Date.now());
-      } else {
-        // Quiz completado
-        onComplete([...results, result]);
-      }
-    }, 2500);
+  /**
+   * handleNext
+   * Avanza manualmente a la siguiente pregunta o finaliza el quiz.
+   */
+  const handleNext = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex((prev) => prev + 1);
+      setSelectedAnswer(null);
+      setShowResult(false);
+      setStartTime(Date.now());
+    } else {
+      onComplete(results);
+    }
   };
 
   /**
@@ -242,6 +244,18 @@ export function QuizGame({ quizData, randomOrder, onComplete }: QuizGameProps) {
                   </p>
                 )}
               </div>
+            )}
+
+            {showResult && (
+              <Button
+                onClick={handleNext}
+                className="w-full h-12 text-lg font-black quiz-button-primary text-white rounded-2xl"
+                size="lg"
+              >
+                {currentQuestionIndex < questions.length - 1
+                  ? "Siguiente"
+                  : "Ver resultados"}
+              </Button>
             )}
 
             {!showResult && (
