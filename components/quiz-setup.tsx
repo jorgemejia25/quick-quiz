@@ -26,6 +26,50 @@ import type React from "react";
 import { Toggle } from "@/components/ui/toggle";
 
 /**
+ * validateQuizData
+ * Valida la estructura mínima del JSON de quiz y devuelve un objeto tipado.
+ * @param input JSON parseado.
+ * @throws Error si la estructura no es válida.
+ */
+function validateQuizData(input: unknown): QuizData {
+  if (!input || typeof input !== "object") {
+    throw new Error("El JSON del quiz no es un objeto válido");
+  }
+
+  const record = input as Record<string, unknown>;
+  const title = record.title;
+  const questions = record.questions;
+
+  if (typeof title !== "string" || title.trim().length === 0) {
+    throw new Error("El JSON debe tener un título (string) válido");
+  }
+  if (!Array.isArray(questions)) {
+    throw new Error("El JSON debe tener un array de preguntas");
+  }
+
+  for (const question of questions) {
+    if (!question || typeof question !== "object") {
+      throw new Error("Cada pregunta debe ser un objeto");
+    }
+    const q = question as Record<string, unknown>;
+    if (typeof q.id !== "string" || q.id.trim().length === 0) {
+      throw new Error("Cada pregunta debe tener un id (string)");
+    }
+    if (typeof q.question !== "string" || q.question.trim().length === 0) {
+      throw new Error("Cada pregunta debe tener question (string)");
+    }
+    if (!Array.isArray(q.options) || q.options.length === 0) {
+      throw new Error("Cada pregunta debe tener options (array) no vacío");
+    }
+    if (typeof q.correctAnswer !== "number") {
+      throw new Error("Cada pregunta debe tener correctAnswer (número)");
+    }
+  }
+
+  return record as unknown as QuizData;
+}
+
+/**
  * Props para `QuizSetup`.
  * - onStartQuiz: callback que inicia el quiz con los datos cargados y si el orden es aleatorio.
  */
@@ -43,6 +87,7 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
   const [randomOrder, setRandomOrder] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [loadingPreset, setLoadingPreset] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Sample quiz data for demonstration
@@ -95,6 +140,23 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
     ],
   };
 
+  /**
+   * predefQuizzes
+   * Lista de quizzes almacenados en `public/`.
+   */
+  const predefQuizzes: Array<{ id: string; label: string; path: string }> = [
+    {
+      id: "quiz-biopsicologia",
+      label: "Biopsicología",
+      path: "/quiz-biopsicologia.json",
+    },
+    {
+      id: "quiz-danio-cerebral",
+      label: "Daño Cerebral",
+      path: "/quiz-danio-cerebral.json",
+    },
+  ];
+
   /** Maneja la carga y validación del archivo JSON. */
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -112,28 +174,7 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
       reader.onload = (e) => {
         try {
           const content = e.target?.result as string;
-          const quizData = JSON.parse(content);
-
-          // Validación de estructura del JSON
-          if (!quizData.title || !Array.isArray(quizData.questions)) {
-            throw new Error(
-              "El JSON debe tener un título y un array de preguntas",
-            );
-          }
-
-          for (const question of quizData.questions) {
-            if (
-              !question.id ||
-              !question.question ||
-              !Array.isArray(question.options) ||
-              typeof question.correctAnswer !== "number"
-            ) {
-              throw new Error(
-                "Cada pregunta debe tener id, question, options (array) y correctAnswer (número)",
-              );
-            }
-          }
-
+          const quizData = validateQuizData(JSON.parse(content));
           setLoadedQuiz(quizData);
           setError("");
         } catch (err) {
@@ -159,6 +200,42 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
       reader.readAsText(file);
     } else {
       setError("No se seleccionó ningún archivo");
+    }
+  };
+
+  /**
+   * handleLoadPreset
+   * Carga un quiz predefinido desde `public/` y lo establece como quiz activo.
+   * @param preset Quiz predefinido.
+   */
+  const handleLoadPreset = async (preset: {
+    id: string;
+    label: string;
+    path: string;
+  }) => {
+    setError("");
+    setIsLoading(true);
+    setLoadingPreset(preset.id);
+    try {
+      const res = await fetch(preset.path, { cache: "no-store" });
+      if (!res.ok) {
+        throw new Error(
+          `No se pudo cargar "${preset.label}" (HTTP ${res.status})`,
+        );
+      }
+      const parsed: unknown = await res.json();
+      const quizData = validateQuizData(parsed);
+      setLoadedQuiz(quizData);
+    } catch (err) {
+      setLoadedQuiz(null);
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Error al cargar el quiz predefinido",
+      );
+    } finally {
+      setIsLoading(false);
+      setLoadingPreset(null);
     }
   };
 
@@ -218,6 +295,48 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-8 space-y-8">
+            <div className="rounded-2xl border border-purple-400/20 bg-purple-950/20 p-5">
+              <div className="flex items-center justify-between gap-4 mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-600/60 to-rose-600/60 flex items-center justify-center ring-1 ring-purple-400/25">
+                    <Sparkles className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-black text-foreground">
+                      Quizes Predefinidos
+                    </h3>
+                    <p className="text-sm text-muted-foreground font-medium">
+                      Carga un quiz listo desde el proyecto
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {predefQuizzes.map((preset) => (
+                  <Button
+                    key={preset.id}
+                    type="button"
+                    variant="outline"
+                    onClick={() => handleLoadPreset(preset)}
+                    disabled={isLoading}
+                    className="h-auto py-4 px-4 rounded-xl border-2 border-purple-400/25 bg-purple-950/20 hover:bg-purple-900/30 hover:border-rose-400/35 text-left justify-start"
+                  >
+                    <span className="flex flex-col items-start gap-1 w-full">
+                      <span className="font-black text-base text-foreground">
+                        {preset.label}
+                      </span>
+                      <span className="text-xs text-muted-foreground font-semibold">
+                        {loadingPreset === preset.id
+                          ? "Cargando..."
+                          : preset.path}
+                      </span>
+                    </span>
+                  </Button>
+                ))}
+              </div>
+            </div>
+
             {!loadedQuiz ? (
               <div
                 className="rounded-2xl p-10 text-center cursor-pointer border border-purple-400/30 hover:border-rose-400/40 bg-purple-900/20 hover:bg-purple-900/30 transition-colors"

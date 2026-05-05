@@ -8,6 +8,46 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 
+/**
+ * shuffleInPlace
+ * Mezcla un arreglo in-place usando Fisher–Yates.
+ * @param items Arreglo a mezclar (se modifica).
+ */
+function shuffleInPlace<T>(items: T[]): void {
+  for (let i = items.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const tmp = items[i];
+    items[i] = items[j];
+    items[j] = tmp;
+  }
+}
+
+/**
+ * shuffleQuestionOptions
+ * Devuelve una copia de la pregunta con las opciones mezcladas y el índice
+ * de `correctAnswer` actualizado al nuevo orden.
+ * @param question Pregunta original.
+ */
+function shuffleQuestionOptions(question: Question): Question {
+  const decorated = question.options.map((text, originalIndex) => ({
+    text,
+    originalIndex,
+  }));
+
+  shuffleInPlace(decorated);
+
+  const options = decorated.map((d) => d.text);
+  const correctAnswer = decorated.findIndex(
+    (d) => d.originalIndex === question.correctAnswer,
+  );
+
+  // Si el índice correcto original no existe, se preserva (evita NaN/negativos).
+  const safeCorrectAnswer =
+    correctAnswer >= 0 ? correctAnswer : question.correctAnswer;
+
+  return { ...question, options, correctAnswer: safeCorrectAnswer };
+}
+
 /** Props del componente `QuizGame`. */
 interface QuizGameProps {
   /** Datos del quiz (título y preguntas). */
@@ -41,7 +81,16 @@ export function QuizGame({ quizData, randomOrder, onComplete }: QuizGameProps) {
       ? [...quizData.questions].sort(() => Math.random() - 0.5)
       : quizData.questions;
 
-    setQuestions(questionsToUse);
+    // Las respuestas SIEMPRE se mezclan para cada pregunta.
+    const questionsWithShuffledOptions = questionsToUse.map((q) =>
+      shuffleQuestionOptions(q),
+    );
+
+    setQuestions(questionsWithShuffledOptions);
+    setCurrentQuestionIndex(0);
+    setSelectedAnswer(null);
+    setShowResult(false);
+    setResults([]);
     setStartTime(Date.now());
   }, [quizData, randomOrder]);
 

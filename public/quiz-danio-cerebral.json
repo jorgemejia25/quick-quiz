@@ -1,0 +1,426 @@
+{
+  "title": "Daño Cerebral: Infecciones, Neurotoxinas y Factores Genéticos",
+  "description": "Quiz avanzado basado en el material del Dr. Enrique Mendoza Gaitán — segunda parte",
+  "questions": [
+    {
+      "id": "1",
+      "question": "¿Qué término técnico se utiliza cuando la infección afecta simultáneamente el encéfalo Y las meninges?",
+      "options": [
+        "Encefalitis difusa",
+        "Meningoencefalitis",
+        "Neuroinfección generalizada",
+        "Empiema cerebral"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material indica que cuando la infección afecta el encéfalo y las meninges al mismo tiempo, el trastorno se denomina técnicamente meningoencefalitis."
+    },
+    {
+      "id": "2",
+      "question": "¿Cuál es la causa más frecuente de encefalitis (inflamación del encéfalo)?",
+      "options": [
+        "Bacterias",
+        "Hongos",
+        "Virus",
+        "Protozoos"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Según el material, los virus son la causa más frecuente de las encefalitis."
+    },
+    {
+      "id": "3",
+      "question": "¿Qué son los priones y por qué son comparados con una 'manzana podrida'?",
+      "options": [
+        "Son virus de ARN que destruyen neuronas directamente al replicarse",
+        "Son proteínas mal plegadas capaces de contagiar esa configuración errónea a otras proteínas sanas",
+        "Son parásitos microscópicos que forman quistes en el tejido neural",
+        "Son anticuerpos defectuosos que atacan la mielina del sistema nervioso"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los priones son proteínas mal plegadas que contagian esa configuración errónea a otras proteínas, convirtiéndolas a su vez en priones. Se comparan con una manzana podrida que estropea al resto de las de la cesta."
+    },
+    {
+      "id": "4",
+      "question": "¿Cuál es la diferencia entre un absceso cerebral y un empiema?",
+      "options": [
+        "El absceso es causado por virus y el empiema por bacterias",
+        "El empiema afecta todo el encéfalo mientras que el absceso es localizado",
+        "Ambos términos describen exactamente la misma condición con diferente nombre según el país",
+        "Son dos términos para infecciones cerebrales localizadas en forma de bolsa de pus"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El material menciona que en algunos trastornos la infección queda limitada a una única zona localizada en forma de bolsa de pus, denominada empiema o absceso, usando ambos términos de forma equivalente para describir ese tipo de infección localizada."
+    },
+    {
+      "id": "5",
+      "question": "La meningitis bacteriana resulta mortal en adultos en qué porcentaje de los casos, y qué sucede con los sobrevivientes?",
+      "options": [
+        "Mortal en el 5% de los casos; los sobrevivientes generalmente se recuperan sin secuelas",
+        "Mortal en el 25% de los adultos; los sobrevivientes pueden quedar con lesiones cerebrales ya producidas",
+        "Mortal en el 50% de los adultos; los sobrevivientes deben recibir diálisis cerebral",
+        "Mortal en el 10% de los casos; los sobrevivientes pierden permanentemente la memoria"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material indica que la meningitis bacteriana resulta mortal en el 25% de los adultos, y si sobreviven pueden quedar lesiones cerebrales que ya se han producido."
+    },
+    {
+      "id": "6",
+      "question": "¿Cuál es el tratamiento para un absceso cerebral según el material?",
+      "options": [
+        "Solo antivirales intravenosos durante 6 semanas",
+        "Radioterapia localizada para eliminar el tejido infectado",
+        "Antibióticos y posiblemente drenaje del pus con aguja o cirugía, más medicamentos para reducir hinchazón",
+        "Corticosteroides para reducir la inflamación y esperar resolución espontánea"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El tratamiento del absceso cerebral incluye antibióticos, por lo general drenaje del pus con una aguja o cirugía para extirpar el absceso, y algunos medicamentos para reducir la hinchazón y la presión."
+    },
+    {
+      "id": "7",
+      "question": "¿Qué microorganismos específicos pueden provocar la formación de QUISTES en el encéfalo? Elige la combinación correcta del material.",
+      "options": [
+        "Bacterias como el estafilococo y el estreptococo",
+        "Virus como el herpes simple y el citomegalovirus",
+        "Hongos como los aspergillos, protozoos como Toxoplasma gondii y parásitos como Taenia solium",
+        "Priones y virus de ARN como el de la rabia"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El material menciona específicamente que los hongos (como los aspergillos), los protozoos (como Toxoplasma gondii) y los parásitos (como Taenia solium, la tenia del cerdo) pueden provocar la formación de quistes en el encéfalo."
+    },
+    {
+      "id": "8",
+      "question": "¿A través de qué mecanismo la sífilis pasa de etapa latente a atacar el cerebro?",
+      "options": [
+        "La bacteria muta al ser combatida por el sistema inmune y se vuelve neurotropa",
+        "La bacteria permanece en fase latente durante varios años antes de hacerse virulenta y atacar al encéfalo",
+        "El sistema inmune sobreactivado comienza a atacar el propio tejido nervioso",
+        "El tratamiento incompleto con penicilina provoca que la bacteria mute y ataque el sistema nervioso"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Según el material, la bacteria infecciosa de la sífilis pasa a una fase latente durante varios años antes de hacerse virulenta y atacar a muchas partes del organismo, incluyendo el encéfalo."
+    },
+    {
+      "id": "9",
+      "question": "¿Cuánto tiempo después de la infección inicial ocurre generalmente la neurosífilis?",
+      "options": [
+        "Entre 1 y 3 años",
+        "Entre 5 y 8 años",
+        "Entre 10 y 20 años",
+        "Siempre dentro del primer año si no se trata"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El material indica que la neurosífilis ocurre por lo regular alrededor de 10 a 20 años después de que una persona resulta infectada con sífilis por primera vez."
+    },
+    {
+      "id": "10",
+      "question": "En la sífilis terciaria no tratada, ¿qué porcentaje de personas desarrolla complicaciones?",
+      "options": [
+        "Cerca del 10% a 15%",
+        "Cerca del 30% al 40%",
+        "Cerca del 60% al 70%",
+        "El 100%, ya que sin tratamiento siempre progresa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material señala que después de la etapa latente, cerca del 30% o 40% de las personas con sífilis que no reciben tratamiento sufren complicaciones, en la fase conocida como sífilis terciaria o tardía."
+    },
+    {
+      "id": "11",
+      "question": "¿Por qué la rabia se clasifica como 'zoonosis'?",
+      "options": [
+        "Porque solo afecta a animales salvajes y nunca puede transmitirse a humanos",
+        "Porque es causada exclusivamente por organismos unicelulares presentes en el agua",
+        "Porque es una enfermedad infecciosa transmisible de animales vertebrados a seres humanos",
+        "Porque provoca comportamiento animal en los humanos infectados"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El material define zoonosis como enfermedades infecciosas transmisibles de animales vertebrados a seres humanos, causadas por virus, bacterias, parásitos u hongos. La rabia es clasificada como tal."
+    },
+    {
+      "id": "12",
+      "question": "¿Cuál es la ruta que sigue el virus de la rabia desde el punto de entrada hasta causar síntomas?",
+      "options": [
+        "Ingresa al torrente sanguíneo y llega al cerebro por la barrera hematoencefálica",
+        "El virus viaja desde la herida hasta el cerebro, donde causa hinchazón o inflamación que provoca los síntomas",
+        "Se replica en el hígado primero y luego migra al sistema nervioso periférico",
+        "Infecta primero las glándulas salivales y luego avanza hacia el sistema nervioso central"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Según el material, el virus de la rabia viaja desde la herida hasta el cerebro, donde causa una hinchazón o inflamación, que es la que provoca los síntomas de la enfermedad."
+    },
+    {
+      "id": "13",
+      "question": "¿Cuál es el período de incubación promedio de la rabia, y cuál es el rango completo mencionado?",
+      "options": [
+        "Promedio: 1 semana. Rango: de 2 días a 1 mes",
+        "Promedio: 3 a 12 semanas. Rango: de 10 días a 7 años",
+        "Promedio: 6 meses. Rango: de 1 mes a 2 años",
+        "Promedio: 2 días. Rango: de horas a 30 días"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material establece que el período de incubación de la rabia varía entre 10 días y 7 años, con un tiempo promedio de incubación de 3 a 12 semanas."
+    },
+    {
+      "id": "14",
+      "question": "¿Cuál es el síntoma más característico y reconocido de la rabia?",
+      "options": [
+        "Parálisis progresiva de las extremidades inferiores",
+        "Alucinaciones visuales de animales",
+        "Miedo al agua (hidrofobia)",
+        "Espasmos musculares del cuello y torso"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El material indica que el miedo al agua (hidrofobia) es el síntoma más común de la rabia."
+    },
+    {
+      "id": "15",
+      "question": "¿En qué se diferencia la rabia de otros virus que también afectan el sistema nervioso, como el de las paperas o el herpes?",
+      "options": [
+        "La rabia no puede combatirse con vacunas, mientras que las paperas y el herpes sí",
+        "La rabia tiene afinidad particular por el tejido neural, mientras que las paperas y el herpes atacan el tejido neural pero no tienen mayor afinidad por él que por otros tejidos",
+        "Las paperas y el herpes son más mortales que la rabia porque atacan más órganos",
+        "La rabia es producida por bacterias, a diferencia de las paperas y el herpes que son virales"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material clasifica los virus en dos tipos: los que tienen afinidad particular por el tejido neural (como la rabia) y los que atacan el tejido neural pero no tienen mayor afinidad por él que por otros tejidos (como las paperas y el herpes)."
+    },
+    {
+      "id": "16",
+      "question": "¿Qué glándulas afecta principalmente el virus de las paperas y cómo se llaman?",
+      "options": [
+        "Las glándulas tiroides, ubicadas en el cuello",
+        "Las glándulas suprarrenales, ubicadas sobre los riñones",
+        "Las glándulas parótidas, ubicadas a cada lado de la cara, que producen saliva",
+        "Las glándulas sublinguales, ubicadas debajo de la lengua"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El virus de las paperas afecta las glándulas que se encuentran a cada lado de la cara, llamadas glándulas parótidas, que producen la saliva."
+    },
+    {
+      "id": "17",
+      "question": "La orquitis (inflamación de testículos) en las paperas: ¿en qué grupo poblacional ocurre con más frecuencia y cuántos días después de la parotiditis aparece?",
+      "options": [
+        "En niños menores de 5 años, aparece dentro de las primeras 24 horas",
+        "En adolescentes y adultos pospuberales, aparece 4-6 días después de la parotiditis",
+        "En adultos mayores de 60 años, aparece semanas después",
+        "En bebés durante la lactancia, aparece simultáneamente con los síntomas iniciales"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La orquitis viral por paperas ocurre principalmente en adolescentes y adultos pospuberales, y suele aparecer 4-6 días después de la parotiditis, cuando el Paramixovirus viaja desde las glándulas salivales hasta los testículos por el torrente sanguíneo."
+    },
+    {
+      "id": "18",
+      "question": "¿Cuál es la estimación global de personas menores de 50 años infectadas con VHS-1 (herpes labial)?",
+      "options": [
+        "Aproximadamente 500 millones (10%)",
+        "Aproximadamente 1,000 millones (20%)",
+        "Aproximadamente 3,800 millones (64%)",
+        "Aproximadamente 200 millones (4%)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Según el material, se estima que 3,800 millones de personas menores de 50 años (64%) en todo el mundo tienen infección por VHS-1."
+    },
+    {
+      "id": "19",
+      "question": "¿Cómo multiplica la infección por VHS-2 el riesgo de adquirir el VIH?",
+      "options": [
+        "Lo multiplica aproximadamente por dos",
+        "Lo multiplica aproximadamente por tres",
+        "Lo multiplica aproximadamente por cinco",
+        "No aumenta el riesgo de VIH, solo aumenta la gravedad de sus síntomas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material indica que la infección por VHS-2 multiplica aproximadamente por tres el riesgo de infección por VIH. Además, las personas infectadas por ambos virus tienen más probabilidades de transmitir el VIH."
+    },
+    {
+      "id": "20",
+      "question": "¿Qué virus causa el herpes zóster y cómo se relaciona con la varicela?",
+      "options": [
+        "El virus VHS-2, que muta después de la infección genital y migra a nervios cutáneos",
+        "Un virus distinto llamado varicela-zóster, sin relación con la varicela",
+        "El virus varicela-zóster: el mismo que causa la varicela, que permanece en el cuerpo y puede reactivarse años después como herpes zóster",
+        "El Paramixovirus que, tras causar paperas, se reactiva en el sistema nervioso periférico"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El herpes zóster es causado por el virus varicela-zóster, el mismo virus que provoca la varicela. Después de contraer varicela, el virus permanece en el cuerpo de por vida y años más tarde puede reactivarse como herpes zóster."
+    },
+    {
+      "id": "21",
+      "question": "¿Cuál es la complicación más común del herpes zóster y a qué grupo poblacional afecta más?",
+      "options": [
+        "Parálisis facial permanente; afecta principalmente a niños menores de 10 años",
+        "Neuralgia posherpética: dolor urente en nervios y piel que perdura tras desaparecer el sarpullido; afecta principalmente a mayores de 60 años",
+        "Encefalitis viral; afecta principalmente a adultos de entre 30 y 50 años",
+        "Pérdida auditiva permanente; afecta con igual frecuencia a todos los grupos de edad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La complicación más común del herpes zóster es la neuralgia posherpética: un dolor urente en nervios y piel que perdura mucho después de que el sarpullido y las ampollas desaparecen. El riesgo aumenta con la edad y afecta principalmente a personas mayores de 60 años."
+    },
+    {
+      "id": "22",
+      "question": "¿Qué efecto específico produce el plomo sobre la barrera hematoencefálica según el material?",
+      "options": [
+        "La fortalece, impidiendo que otras toxinas entren al cerebro",
+        "La destruye completamente de forma irreversible en una sola exposición",
+        "No solo la atraviesa sino que también aumenta su permeabilidad, dejando el cerebro vulnerable a otras sustancias tóxicas",
+        "La bloquea temporalmente, impidiendo que los medicamentos lleguen al cerebro"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Según el material, el plomo no solo atraviesa la barrera hematoencefálica, sino que también aumenta su permeabilidad, dejando así el cerebro vulnerable a otras sustancias tóxicas."
+    },
+    {
+      "id": "23",
+      "question": "Al plomo se le ha llamado una 'toxina silenciosa'. ¿Con qué otra condición comparte ese apelativo de 'silenciosa' según el material?",
+      "options": [
+        "Con la exposición al mercurio",
+        "Con el traumatismo craneoencefálico, llamado la 'epidemia silenciosa'",
+        "Con la infección por VHS-2",
+        "Con el consumo crónico de alcohol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material indica que al plomo se le ha llamado una 'toxina silenciosa', de forma similar a como se ha denominado al traumatismo craneoencefálico la 'epidemia silenciosa'."
+    },
+    {
+      "id": "24",
+      "question": "¿Cuál es la consecuencia de altas concentraciones de plomo en la barrera hematoencefálica?",
+      "options": [
+        "Se forma una capa protectora de calcio alrededor del cerebro",
+        "Puede acumularse líquido causando edema cerebral, que provoca presión intracraneal extrema y daño cerebral irreversible",
+        "Las neuronas producen más mielina para protegerse del daño oxidativo",
+        "El cerebro activa mecanismos de autorreparación que neutralizan el plomo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cuando la barrera hematoencefálica se expone a altas concentraciones de plomo, puede acumularse líquido y causar edema cerebral, que provoca una presión intracraneal extrema que puede derivar en encefalopatía y daño cerebral irreversible."
+    },
+    {
+      "id": "25",
+      "question": "¿Qué enfermedades neurodegenerativas en la edad adulta se han relacionado con la exposición al plomo en la infancia?",
+      "options": [
+        "Esclerosis múltiple y epilepsia",
+        "Enfermedad de Parkinson y, más recientemente, enfermedad de Alzheimer",
+        "Esquizofrenia y trastorno bipolar",
+        "Esclerosis lateral amiotrófica (ELA) y demencia frontotemporal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material indica que la exposición al plomo se ha relacionado con la enfermedad de Parkinson y, más recientemente, con la enfermedad de Alzheimer, además de reducir el coeficiente intelectual y causar trastornos por déficit de atención."
+    },
+    {
+      "id": "26",
+      "question": "¿Cuál es el mecanismo por el que el alcohol produce lesiones cerebrales según el material?",
+      "options": [
+        "Por sus efectos neurotóxicos directos sobre el metabolismo de la tiamina",
+        "Por bloquear los receptores de serotonina en el hipocampo",
+        "Por aumentar la producción de dopamina hasta niveles tóxicos para las neuronas",
+        "Por reducir el flujo sanguíneo cerebral al contraer los vasos durante la metabolización"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El material indica que el alcohol produce lesiones cerebrales por sus efectos neurotóxicos directos sobre el metabolismo de la tiamina."
+    },
+    {
+      "id": "27",
+      "question": "¿En qué área específica del cerebro actúa el alcohol para provocar las 'lagunas mentales' (blackouts) y qué proceso interrumpe?",
+      "options": [
+        "En el córtex prefrontal, interrumpiendo la toma de decisiones",
+        "En el hipocampo, interrumpiendo la consolidación de la memoria (el paso de memoria a corto plazo a largo plazo)",
+        "En el cerebelo, interrumpiendo la coordinación motora fina",
+        "En la amígdala, interrumpiendo el procesamiento emocional"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las lagunas mentales ocurren cuando el alcohol bloquea temporalmente el paso de los recuerdos de la memoria a corto plazo a la memoria a largo plazo. Esto sucede en el hipocampo, y el proceso se conoce como consolidación de la memoria."
+    },
+    {
+      "id": "28",
+      "question": "¿A qué nivel de alcohol en sangre corresponde la euforia y el deterioro motriz según la tabla del material?",
+      "options": [
+        "0.05%: disminución de las inhibiciones",
+        "0.10%: dificultades en la pronunciación",
+        "0.20%: euforia y deterioro motriz",
+        "0.30%: confusión"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Según la tabla del material, el nivel 0.20% de alcohol en sangre corresponde a euforia y deterioro motriz. El 0.05% es disminución de inhibiciones, el 0.10% dificultades en la pronunciación, y el 0.30% confusión."
+    },
+    {
+      "id": "29",
+      "question": "¿Qué es el Delirium Tremens (DT) y por qué se considera una emergencia médica?",
+      "options": [
+        "Es una forma de intoxicación aguda por consumo excesivo de alcohol en una sola noche",
+        "Es la forma más grave de abstinencia de etanol, con alta tasa de mortalidad, que puede progresar a colapso cardiovascular",
+        "Es un trastorno psiquiátrico crónico causado por el alcoholismo a largo plazo, sin riesgo vital inmediato",
+        "Es la reacción alérgica del sistema nervioso al alcohol destilado, específicamente al metanol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El Delirium Tremens es la forma más grave de abstinencia de etanol. Debe considerarse una emergencia médica con alta tasa de mortalidad. Sus manifestaciones incluyen confusión global, agitación, alucinaciones, fiebre, hipertensión e hiperactividad autonómica que puede progresar hasta colapso cardiovascular."
+    },
+    {
+      "id": "30",
+      "question": "El alcohol inicialmente puede confundirse con un estimulante. ¿Por qué, y cuál es su clasificación real?",
+      "options": [
+        "Porque aumenta el ritmo cardíaco en la primera hora; en realidad es un analgésico",
+        "Porque produce euforia y desinhibición inicialmente, pero es un depresor del Sistema Nervioso Central",
+        "Porque mejora los reflejos en dosis bajas; en realidad es un neurotóxico puro",
+        "Porque activa los receptores de dopamina; en realidad es un alucinógeno de baja potencia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El alcohol es un depresor del SNC que inhibe progresivamente las funciones cerebrales. Afecta la capacidad de autocontrol, produciendo inicialmente euforia y desinhibición, por lo que puede confundirse con un estimulante."
+    },
+    {
+      "id": "31",
+      "question": "¿Cuántos síntomas posibles contempla el DSM-5-TR para diagnosticar el Trastorno por Consumo de Alcohol (TCA), y en qué período de tiempo deben presentarse?",
+      "options": [
+        "7 síntomas posibles en los últimos 6 meses",
+        "11 síntomas posibles en los últimos 12 meses",
+        "15 síntomas posibles en los últimos 24 meses",
+        "5 síntomas posibles en los últimos 3 meses"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Según el material, el DSM-5-TR define el TCA como un patrón problemático de consumo que provoca deterioro o malestar significativo, y se diagnostica como leve, moderado o grave según el número de síntomas de un total de 11 posibles en los últimos 12 meses."
+    },
+    {
+      "id": "32",
+      "question": "¿Qué porcentaje de alcohol tiene el vino, la cerveza y el licor fuerte según el material?",
+      "options": [
+        "Cerveza: 10%, Vino: 20%, Licor: 60%",
+        "Cerveza: aproximadamente 5%, Vino: 12% a 17%, Licor: aproximadamente 40%",
+        "Cerveza: 3%, Vino: 8% a 10%, Licor: 25%",
+        "Cerveza: 8%, Vino: 20% a 25%, Licor: 50% a 70%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El material especifica que la cerveza tiene aproximadamente 5% de alcohol, el vino generalmente de 12% a 17%, y el licor fuerte aproximadamente 40% de alcohol."
+    },
+    {
+      "id": "33",
+      "question": "La discinesia tardía es un efecto secundario de antipsicóticos. ¿Cuál de las siguientes afirmaciones sobre ella es CORRECTA según el material?",
+      "options": [
+        "Es completamente reversible si se suspende el medicamento a tiempo",
+        "Solo ocurre con antipsicóticos de primera generación (típicos) y nunca con los de segunda generación",
+        "Generalmente no es reversible, aunque el tratamiento puede ayudar a controlar los síntomas",
+        "Aparece siempre en los primeros 3 meses de tratamiento antipsicótico"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Según el material, la discinesia tardía generalmente no es reversible, pero el tratamiento puede ayudar a controlar los síntomas. Además, aunque el riesgo es menor con antipsicóticos de segunda generación (atípicos), aún puede ocurrir con ellos."
+    },
+    {
+      "id": "34",
+      "question": "¿Cuál es la causa genética del síndrome de Down y cuántas copias del cromosoma 21 tienen las personas con esta condición?",
+      "options": [
+        "Una copia faltante del cromosoma 21; tienen solo una copia en lugar de dos",
+        "Una copia extra del cromosoma 21; tienen tres copias (Trisomía 21) en lugar de las habituales dos",
+        "Una mutación puntual en el cromosoma 21; el número de copias es normal",
+        "Una fusión entre el cromosoma 21 y el 22; tienen cuatro cromosomas fusionados"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El síndrome de Down es causado por heredar una copia extra del cromosoma 21, resultando en tres copias en lugar de las habituales dos. Por eso se denomina Trisomía 21."
+    },
+    {
+      "id": "35",
+      "question": "¿Quién describió por primera vez el síndrome de Down y cuánto tiempo transcurrió hasta saber cuál era su causa genética?",
+      "options": [
+        "El Dr. James Watson en 1953; se supo la causa 10 años después con el descubrimiento del ADN",
+        "El médico inglés John Langdon Down en la década de 1860; tomó casi 100 años después descubrir que es causado por la copia extra del cromosoma 21",
+        "El Dr. Francis Galton en 1900; la causa fue descubierta 20 años después",
+        "El Dr. Gregor Mendel en 1870; la causa fue descubierta simultáneamente con sus leyes de herencia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El médico inglés John Langdon Down describió la condición a mediados de la década de 1860 al observar personas con los mismos rasgos faciales y capacidades intelectuales alteradas. Tomó casi 100 años después descubrir que es causado por tener una copia extra del cromosoma 21."
+    }
+  ]
+}
