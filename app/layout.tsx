@@ -12,7 +12,7 @@ import type React from "react";
  * Define el título, descripción y generador para las páginas.
  */
 export const metadata: Metadata = {
-  title: "Quick Quiz",
+  title: "Quick Quiz — Cargar cuestionario",
   description:
     "Una aplicación interactiva de quiz con preguntas personalizables",
 };
@@ -34,8 +34,9 @@ export default function RootLayout({
     <html
       lang="es"
       className={`${GeistSans.variable} ${GeistMono.variable} antialiased dark`}
+      data-theme="dark"
     >
-      <body className="quiz-gradient">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

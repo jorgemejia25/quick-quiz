@@ -1,0 +1,190 @@
+{
+  "title": "Procesos de negocio",
+  "questions": [
+    {
+      "id": "1",
+      "question": "¿Cuál opción representa correctamente un proceso de negocio?",
+      "options": [
+        "Recursos disponibles sin actividades definidas",
+        "Actividades aisladas que no producen un resultado",
+        "Conjunto de actividades que transforma entradas en salidas para un cliente",
+        "Lista de objetivos estratégicos de la organización"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "2",
+      "question": "Una empresa recibe pedidos, verifica existencias, prepara productos y entrega paquetes. ¿Cuál es una entrada del proceso?",
+      "options": ["Pedido del cliente", "Paquete entregado", "Confirmación de entrega", "Producto empacado"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "3",
+      "question": "En el proceso de despacho, ¿cuál es la salida principal?",
+      "options": ["Información del cliente", "Inventario disponible", "Pedido correctamente entregado", "Material de empaque"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "4",
+      "question": "Un trabajador retira un producto de la estantería y lo lleva al área de empaque. ¿Cuál es la clasificación más precisa?",
+      "options": ["Solamente informativa", "Física y de ubicación", "Transaccional e informativa", "Solamente transaccional"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "5",
+      "question": "Actualizar en el sistema que un pedido fue entregado es una transformación:",
+      "options": ["Física", "Transaccional", "Informativa", "De ubicación"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "6",
+      "question": "Generar una factura después de confirmar una venta es principalmente una transformación:",
+      "options": ["Transaccional", "Física", "De ubicación", "Operativa sin valor"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "7",
+      "question": "¿Cuál actividad representa exclusivamente una transformación de ubicación?",
+      "options": ["Registrar la dirección del cliente", "Cobrar el pedido", "Trasladar el paquete de la bodega al vehículo", "Colocar una etiqueta en el paquete"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "8",
+      "question": "El área de empaque recibe los productos seleccionados por bodega. Desde la perspectiva del proceso, empaque es:",
+      "options": ["Proveedor externo", "Cliente interno", "Cliente externo", "Accionista del proceso"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "9",
+      "question": "¿Quién es el cliente externo principal de un proceso hospitalario de emergencia?",
+      "options": ["El departamento de recepción", "El personal de enfermería", "El paciente atendido", "El departamento de expedientes"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "10",
+      "question": "¿Cuál situación describe mejor a un cliente interno?",
+      "options": ["Un consumidor recibe su compra", "Logística recibe un pedido empacado para distribuirlo", "Un paciente recibe tratamiento", "Una empresa contrata un servicio de consultoría"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "11",
+      "question": "Una empresa establece como estrategia reducir los retrasos de entrega. ¿Cuál proceso está mejor alineado con esa estrategia?",
+      "options": ["Ampliar el formato de las facturas", "Optimizar la preparación y distribución de pedidos", "Cambiar el uniforme del personal administrativo", "Aumentar los niveles jerárquicos"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "12",
+      "question": "¿Cuál afirmación diferencia correctamente la estrategia de los procesos?",
+      "options": ["La estrategia ejecuta tareas y los procesos establecen metas", "La estrategia indica qué lograr y los procesos cómo lograrlo", "La estrategia mide resultados y los procesos eliminan los KPI", "No existe diferencia entre ambos conceptos"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "13",
+      "question": "Si el objetivo estratégico es mejorar la satisfacción del cliente, ¿cuál sería el KPI más directamente relacionado?",
+      "options": ["Número de escritorios administrativos", "Índice de satisfacción del cliente", "Cantidad de departamentos", "Antigüedad promedio del personal"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "14",
+      "question": "¿Cuál indicador sería más apropiado para controlar errores en el despacho?",
+      "options": ["Porcentaje de pedidos incorrectos", "Total de ventas anuales", "Número de empleados contratados", "Cantidad de proveedores registrados"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "15",
+      "question": "Un supermercado desea reducir el tiempo que los clientes permanecen en la fila. ¿Cuál KPI debería utilizar?",
+      "options": ["Rotación anual del personal", "Costo total del inventario", "Tiempo promedio de espera en caja", "Porcentaje de productos disponibles"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "16",
+      "question": "¿Cuál es la principal utilidad de un KPI en la toma de decisiones?",
+      "options": ["Sustituir completamente el análisis gerencial", "Proporcionar evidencia para comparar resultados con objetivos", "Garantizar que nunca ocurran errores", "Eliminar automáticamente los problemas detectados"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "17",
+      "question": "Una empresa automatiza un proceso y los empleados temen perder sus puestos. Esta situación representa:",
+      "options": ["Alineación estratégica", "Resistencia al cambio", "Transformación transaccional", "Mejora del rendimiento"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "18",
+      "question": "¿Cuál acción sería más efectiva para reducir la resistencia causada por falta de conocimientos?",
+      "options": ["Ocultar los cambios hasta la implementación", "Aplicar sanciones antes de capacitar", "Capacitar y acompañar al personal", "Eliminar todos los indicadores"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "19",
+      "question": "¿Por qué el compromiso gerencial es fundamental durante un cambio organizacional?",
+      "options": ["Porque evita que los trabajadores participen", "Porque proporciona liderazgo, recursos y seguimiento", "Porque elimina la necesidad de medir resultados", "Porque garantiza que el cambio no tenga costos"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "20",
+      "question": "Un médico administra un tratamiento que mejora directamente la condición del paciente. Esta actividad:",
+      "options": ["Agrega valor al cliente", "Agrega únicamente valor al negocio", "No agrega valor", "Es un desperdicio necesario"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "21",
+      "question": "El hospital documenta la atención en el expediente por razones legales y de trazabilidad. Esta actividad:",
+      "options": ["Agrega valor directo a la salud del paciente", "Agrega valor al negocio", "No agrega ningún tipo de valor", "Es solamente una transformación física"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "22",
+      "question": "¿Cuál actividad no agrega valor y debería reducirse o eliminarse?",
+      "options": ["Diagnosticar al paciente", "Empacar correctamente un producto", "Repetir el registro de los mismos datos por un error", "Documentar una transacción obligatoria"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "23",
+      "question": "Una actividad no modifica directamente el producto, pero es obligatoria para cumplir una regulación. ¿Cómo se clasifica?",
+      "options": ["Agrega valor al cliente", "Agrega valor al negocio", "No agrega valor en ningún sentido", "Siempre es una transformación física"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "24",
+      "question": "Una cadena registra disponibilidades de 93%, 94%, 96% y 97%. ¿Cuántas observaciones son defectos si la meta es ≥94%?",
+      "options": ["0", "1", "2", "3"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "25",
+      "question": "Una cadena obtiene un promedio de 95%, pero varias visitas están por debajo del 94%. ¿Cuál conclusión es correcta?",
+      "options": ["Cumple la meta en todas las visitas porque el promedio supera 94%", "Todas las observaciones son defectos", "El promedio cumple, pero no se alcanzó la meta en todas las visitas", "El promedio no puede utilizarse para ningún análisis"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "26",
+      "question": "En 80 visitas, 68 alcanzaron la disponibilidad mínima. ¿Cuáles son el rendimiento y el DPMO, suponiendo una oportunidad por visita?",
+      "options": ["85% y 150,000", "68% y 320,000", "15% y 850,000", "85% y 120,000"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "27",
+      "question": "Se encontraron 12 defectos en 200 unidades y se evaluaron 2 oportunidades de defecto por unidad. ¿Cuál es el DPMO?",
+      "options": ["60,000", "30,000", "120,000", "3,000"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "28",
+      "question": "Un proceso presenta un DPMO de 250,000 en 80 visitas, con una oportunidad por visita. ¿Cuántos defectos se observaron?",
+      "options": ["15", "20", "25", "32"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "29",
+      "question": "Dos procesos tienen rendimientos de 70% y 90%, respectivamente. ¿Cuál afirmación es correcta?",
+      "options": ["El proceso de 70% tendrá menor DPMO y mayor sigma", "Ambos tendrán necesariamente el mismo nivel sigma", "El proceso de 90% tendrá menor DPMO y mayor sigma", "El rendimiento no tiene relación con el nivel sigma"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "30",
+      "question": "Una empresa reduce los defectos sin cambiar el número de oportunidades evaluadas. ¿Qué comportamiento debería observarse?",
+      "options": ["Menor rendimiento, mayor DPMO y menor sigma", "Mayor rendimiento, menor DPMO y mayor sigma", "Mayor rendimiento, mayor DPMO y menor sigma", "El rendimiento y el nivel sigma permanecerán iguales"],
+      "correctAnswer": 1
+    }
+  ]
+}

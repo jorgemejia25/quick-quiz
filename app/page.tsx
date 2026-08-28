@@ -32,6 +32,10 @@ export interface QuizResult {
   questionId: string;
   /** Índice seleccionado por el usuario. */
   selectedAnswer: number;
+  /** Texto de la opción seleccionada en el orden mostrado. */
+  selectedAnswerText?: string;
+  /** Texto de la respuesta correcta en el orden mostrado. */
+  correctAnswerText?: string;
   /** Indica si la respuesta fue correcta. */
   isCorrect: boolean;
   /** Tiempo en milisegundos que tomó responder. */
@@ -97,8 +101,8 @@ export default function QuickQuizApp() {
   };
 
   return (
-    <main className="min-h-screen site-bg">
-      <div className="container mx-auto px-4 py-8">
+    <main className="site-bg">
+      <div className="app-root">
         {currentScreen === "setup" && (
           <QuizSetup onStartQuiz={handleStartQuiz} />
         )}
