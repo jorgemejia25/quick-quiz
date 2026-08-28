@@ -94,7 +94,7 @@ export function QuizGame({ quizData, randomOrder, onComplete }: QuizGameProps) {
         <ProgressBar.Track><ProgressBar.Fill /></ProgressBar.Track>
       </ProgressBar>
 
-      <Card className="oled-card question-card" variant="secondary">
+      <Card key={currentQuestion.id} className="oled-card question-card question-transition" variant="secondary">
         <Card.Content className="question-content">
           <h1 className="question-title">{currentQuestion.question}</h1>
           <div className="answer-grid" role="radiogroup" aria-label="Opciones de respuesta">
@@ -110,6 +110,7 @@ export function QuizGame({ quizData, randomOrder, onComplete }: QuizGameProps) {
                   aria-checked={selected}
                   disabled={isRevealed}
                   className={`answer-option ${selected ? "is-selected" : ""} ${correct ? "is-correct" : ""} ${incorrect ? "is-incorrect" : ""}`}
+                  style={{ animationDelay: `${90 + index * 65}ms` }}
                   onClick={() => setSelectedAnswer(index)}
                 >
                   <span className="answer-key">{String.fromCharCode(65 + index)}</span>
