@@ -119,21 +119,22 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
       <Card className="oled-card setup-panel motion-enter motion-delay-1" variant="secondary">
         <Card.Content className="setup-content">
           <div className="library-label">Biblioteca</div>
-          <div className={`library-item ${loadedQuiz?.title === "Procesos de negocio" ? "is-selected" : ""}`}>
+          <button
+            type="button"
+            className={`library-item ${loadedQuiz?.title === "Parcial 1 Modela 2" ? "is-selected" : ""}`}
+            aria-pressed={loadedQuiz?.title === "Parcial 1 Modela 2"}
+            disabled={isLoadingLibrary}
+            onClick={handleLoadLibraryQuiz}
+          >
             <span className="library-icon"><BookOpen size={19} /></span>
             <div className="library-copy">
-              <strong>Procesos de negocio</strong>
+              <strong>Parcial 1 Modela 2</strong>
               <small>30 preguntas · orden aleatorio</small>
             </div>
-            <Button
-              variant={loadedQuiz?.title === "Procesos de negocio" ? "secondary" : "outline"}
-              size="sm"
-              isDisabled={isLoadingLibrary}
-              onPress={handleLoadLibraryQuiz}
-            >
-              {isLoadingLibrary ? "Cargando…" : loadedQuiz?.title === "Procesos de negocio" ? "Elegido" : "Elegir"}
-            </Button>
-          </div>
+            <span className="library-state" aria-hidden="true">
+              {isLoadingLibrary ? "…" : loadedQuiz?.title === "Parcial 1 Modela 2" ? <Check size={17} /> : <ArrowRight size={17} />}
+            </span>
+          </button>
 
           <div className="section-separator"><span>o sube un archivo</span></div>
 
