@@ -50,13 +50,49 @@ button, input, a { font: inherit; }
 ::selection { background: #22d3ee; color: #001216; }
 
 .site-bg {
+  position: relative;
   min-height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #020617;
   background:
-    radial-gradient(circle at 18% 12%, rgba(34, 211, 238, 0.13), transparent 32rem),
-    radial-gradient(circle at 82% 78%, rgba(14, 116, 144, 0.12), transparent 36rem),
-    linear-gradient(135deg, #000 0%, #020809 45%, #000 100%);
-  background-size: 150% 150%, 170% 170%, 100% 100%;
-  animation: ambient-gradient 16s ease-in-out infinite alternate;
+    radial-gradient(circle at 12% 15%, rgba(14, 165, 233, 0.3), transparent 42%),
+    radial-gradient(circle at 88% 76%, rgba(30, 64, 175, 0.38), transparent 48%),
+    linear-gradient(125deg, #020617 0%, #071b36 28%, #001522 52%, #0b1738 76%, #020617 100%);
+  background-size: 190% 190%, 210% 210%, 240% 240%;
+  animation: ambient-gradient 10s ease-in-out infinite alternate;
+}
+
+.site-bg::before,
+.site-bg::after {
+  position: fixed;
+  z-index: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.site-bg::before {
+  inset: -38%;
+  background:
+    radial-gradient(circle at 28% 35%, rgba(56, 189, 248, 0.3), transparent 20%),
+    radial-gradient(circle at 72% 62%, rgba(37, 99, 235, 0.36), transparent 25%),
+    conic-gradient(from 0deg at 50% 50%, transparent 0 20%, rgba(14, 165, 233, 0.2) 31%, transparent 43% 61%, rgba(30, 64, 175, 0.28) 74%, transparent 87%);
+  filter: blur(74px);
+  opacity: 0.9;
+  will-change: transform;
+  animation: halo-orbit 18s linear infinite;
+}
+
+.site-bg::after {
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.045) 1px, transparent 1px),
+    linear-gradient(115deg, transparent 30%, rgba(56, 189, 248, 0.11) 47%, transparent 63%);
+  background-size: 48px 48px, 48px 48px, 240% 240%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 96%);
+  will-change: background-position, opacity;
+  animation: grid-drift 12s linear infinite;
 }
 
 .app-root { position: relative; min-height: 100vh; z-index: 1; }
@@ -303,9 +339,22 @@ button, input, a { font: inherit; }
 }
 
 @keyframes ambient-gradient {
-  0% { background-position: 0% 0%, 100% 100%, 0 0; }
-  50% { background-position: 70% 30%, 30% 70%, 0 0; }
-  100% { background-position: 100% 70%, 0% 30%, 0 0; }
+  0% { background-position: 0% 0%, 100% 100%, 0% 40%; }
+  35% { background-position: 70% 20%, 55% 85%, 45% 55%; }
+  70% { background-position: 100% 75%, 15% 45%, 100% 35%; }
+  100% { background-position: 30% 100%, 0% 10%, 35% 80%; }
+}
+
+@keyframes halo-orbit {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.13); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes grid-drift {
+  0% { background-position: 0 0, 0 0, -140% 0; opacity: 0.55; }
+  50% { opacity: 0.95; }
+  100% { background-position: 48px 48px, 48px 48px, 140% 100%; opacity: 0.55; }
 }
 
 @keyframes question-in {
