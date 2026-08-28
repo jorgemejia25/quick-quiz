@@ -92,7 +92,9 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
     try {
       const response = await fetch("/quiz-procesos-negocio.json", { cache: "no-store" });
       if (!response.ok) throw new Error("No se pudo cargar el quiz.");
-      setLoadedQuiz(validateQuizData(await response.json()));
+      const quiz = validateQuizData(await response.json());
+      setLoadedQuiz(quiz);
+      onStartQuiz(quiz, true);
     } catch (cause) {
       setError(cause instanceof Error ? cause.message : "No se pudo cargar el quiz.");
     } finally {
@@ -121,18 +123,17 @@ export function QuizSetup({ onStartQuiz }: QuizSetupProps) {
           <div className="library-label">Biblioteca</div>
           <button
             type="button"
-            className={`library-item ${loadedQuiz?.title === "Parcial 1 Modela 2" ? "is-selected" : ""}`}
-            aria-pressed={loadedQuiz?.title === "Parcial 1 Modela 2"}
+            className="library-item"
+            aria-label="Comenzar Parcial 1 Modela 2"
             disabled={isLoadingLibrary}
             onClick={handleLoadLibraryQuiz}
           >
             <span className="library-icon"><BookOpen size={19} /></span>
             <div className="library-copy">
               <strong>Parcial 1 Modela 2</strong>
-              <small>30 preguntas · orden aleatorio</small>
             </div>
             <span className="library-state" aria-hidden="true">
-              {isLoadingLibrary ? "…" : loadedQuiz?.title === "Parcial 1 Modela 2" ? <Check size={17} /> : <ArrowRight size={17} />}
+              {isLoadingLibrary ? "…" : <ArrowRight size={17} />}
             </span>
           </button>
 
