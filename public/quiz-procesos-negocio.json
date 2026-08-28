@@ -3,218 +3,363 @@
   "questions": [
     {
       "id": "1",
-      "question": "¿Cuál opción representa correctamente un proceso de negocio?",
+      "question": "Una unidad recibe solicitudes, valida requisitos, decide si autoriza y comunica la resolución. El sistema registra cada paso, pero ninguna actividad aislada constituye el proceso completo. ¿Qué elemento permite delimitarlo como proceso de negocio?",
       "options": [
-        "Recursos disponibles sin actividades definidas",
-        "Actividades aisladas que no producen un resultado",
-        "Conjunto de actividades que transforma entradas en salidas para un cliente",
-        "Lista de objetivos estratégicos de la organización"
+        "La plataforma utilizada para registrar las decisiones",
+        "La secuencia que convierte una solicitud en una resolución para un destinatario",
+        "La cantidad de áreas que intervienen en la autorización",
+        "El conjunto de recursos asignados, aunque no exista resultado definido"
       ],
-      "correctAnswer": 2,
-      "explanation": "Un proceso de negocio conecta actividades para convertir entradas en una salida que satisface una necesidad del cliente."
+      "correctAnswer": 1,
+      "explanation": "El proceso se delimita por la transformación completa de una entrada en una salida útil para un cliente; la tecnología, los recursos y las áreas son medios, no el criterio principal."
     },
     {
       "id": "2",
-      "question": "Una empresa recibe pedidos, verifica existencias, prepara productos y entrega paquetes. ¿Cuál es una entrada del proceso?",
-      "options": ["Pedido del cliente", "Paquete entregado", "Confirmación de entrega", "Producto empacado"],
-      "correctAnswer": 0,
-      "explanation": "El pedido del cliente inicia el proceso; el paquete y la confirmación aparecen después como resultados."
+      "question": "En un proceso de devoluciones, el cliente entrega el producto y su comprobante; luego la empresa inspecciona, actualiza inventario y emite un reembolso. Si se analiza únicamente el subproceso de inspección, ¿cuál es su entrada más precisa?",
+      "options": [
+        "La solicitud inicial de devolución",
+        "El producto devuelto disponible para evaluación",
+        "El inventario actualizado después de aceptar la devolución",
+        "La orden de reembolso autorizada"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La entrada depende del límite analizado. Para inspección, la solicitud ya fue procesada y lo que recibe el subproceso es el producto que debe evaluar."
     },
     {
       "id": "3",
-      "question": "En el proceso de despacho, ¿cuál es la salida principal?",
-      "options": ["Información del cliente", "Inventario disponible", "Pedido correctamente entregado", "Material de empaque"],
+      "question": "Un centro de distribución considera terminado el despacho cuando entrega el paquete al transportista. Sin embargo, la promesa al cliente es recibirlo en su domicilio. ¿Cuál salida debe usarse para medir el proceso de cumplimiento de pedido de extremo a extremo?",
+      "options": [
+        "Paquete clasificado en el centro de distribución",
+        "Guía de transporte emitida sin errores",
+        "Pedido recibido por el cliente conforme a lo solicitado",
+        "Paquete transferido al transportista dentro del horario"
+      ],
       "correctAnswer": 2,
-      "explanation": "El despacho termina cuando el pedido llega correctamente al cliente, por lo que esa entrega es su salida principal."
+      "explanation": "En un proceso de extremo a extremo, la salida se define desde la promesa al cliente. Entregar al transportista es una salida intermedia, no el resultado final."
     },
     {
       "id": "4",
-      "question": "Un trabajador retira un producto de la estantería y lo lleva al área de empaque. ¿Cuál es la clasificación más precisa?",
-      "options": ["Solamente informativa", "Física y de ubicación", "Transaccional e informativa", "Solamente transaccional"],
-      "correctAnswer": 1,
-      "explanation": "Se manipula físicamente el producto y también se cambia su ubicación desde la estantería hasta empaque."
+      "question": "Durante el surtido, un operario escanea un artículo, lo retira de una ubicación y el sistema reduce la existencia disponible. ¿Cuál clasificación describe mejor el conjunto de transformaciones ocurrido?",
+      "options": [
+        "Física, de ubicación e informativa",
+        "De ubicación y transaccional, pero no física",
+        "Informativa y transaccional, pero no de ubicación",
+        "Únicamente física porque el artículo fue manipulado"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El artículo se manipula físicamente, cambia de ubicación y se modifica la información de inventario. El caso exige reconocer transformaciones simultáneas."
     },
     {
       "id": "5",
-      "question": "Actualizar en el sistema que un pedido fue entregado es una transformación:",
-      "options": ["Física", "Transaccional", "Informativa", "De ubicación"],
+      "question": "Un banco recalcula el saldo disponible después de aplicar una retención temporal, sin que todavía se haya transferido dinero a otra cuenta. ¿Cuál es la transformación dominante?",
+      "options": [
+        "Física, porque cambia la disponibilidad del dinero",
+        "De ubicación, porque los fondos pasan a una reserva",
+        "Informativa, porque cambia el estado registrado antes de liquidar la operación",
+        "Transaccional, porque toda modificación de saldo implica una liquidación definitiva"
+      ],
       "correctAnswer": 2,
-      "explanation": "La acción cambia el estado registrado del pedido en el sistema, es decir, transforma información."
+      "explanation": "La retención modifica la información de disponibilidad, pero aún no ejecuta la transferencia o liquidación económica definitiva; por eso domina la transformación informativa."
     },
     {
       "id": "6",
-      "question": "Generar una factura después de confirmar una venta es principalmente una transformación:",
-      "options": ["Transaccional", "Física", "De ubicación", "Operativa sin valor"],
-      "correctAnswer": 0,
-      "explanation": "La factura formaliza y registra económicamente la venta, por eso corresponde a una transformación transaccional."
+      "question": "Una tienda confirma una venta, genera la obligación de cobro y posteriormente imprime el comprobante. Si debe identificarse la transformación transaccional, ¿qué evento la representa mejor?",
+      "options": [
+        "Imprimir el comprobante para entregarlo al comprador",
+        "Crear la obligación económica asociada a la venta",
+        "Mover el producto desde exhibición hacia caja",
+        "Mostrar en pantalla el resumen de artículos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La transformación transaccional ocurre al formalizar el intercambio económico. Imprimir o mostrar información son acciones informativas y mover el producto es de ubicación."
     },
     {
       "id": "7",
-      "question": "¿Cuál actividad representa exclusivamente una transformación de ubicación?",
-      "options": ["Registrar la dirección del cliente", "Cobrar el pedido", "Trasladar el paquete de la bodega al vehículo", "Colocar una etiqueta en el paquete"],
-      "correctAnswer": 2,
-      "explanation": "Trasladar el paquete solo cambia el lugar donde se encuentra; no altera su contenido ni registra una transacción."
+      "question": "¿En cuál actividad el cambio de ubicación es el resultado principal, aunque existan registros auxiliares?",
+      "options": [
+        "Transferir mercancía entre dos bodegas y registrar su recepción",
+        "Reclasificar un artículo como obsoleto dentro del sistema",
+        "Convertir materia prima en producto terminado",
+        "Emitir una nota de crédito por una devolución"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La finalidad de la transferencia es cambiar la localización de la mercancía. El registro confirma el movimiento, pero es auxiliar frente a la transformación de ubicación."
     },
     {
       "id": "8",
-      "question": "El área de empaque recibe los productos seleccionados por bodega. Desde la perspectiva del proceso, empaque es:",
-      "options": ["Proveedor externo", "Cliente interno", "Cliente externo", "Accionista del proceso"],
-      "correctAnswer": 1,
-      "explanation": "Empaque recibe la salida de bodega dentro de la misma organización, por lo que actúa como cliente interno."
+      "question": "Compras envía una orden aprobada a recepción; recepción la utiliza para validar lo entregado por el proveedor. Al analizar la relación entre ambas áreas, ¿cómo se clasifica recepción respecto de compras?",
+      "options": [
+        "Cliente interno, porque consume una salida de compras para continuar el flujo",
+        "Proveedor interno, porque determina si la orden fue emitida correctamente",
+        "Cliente externo, porque interactúa con un proveedor ajeno a la empresa",
+        "Propietario del proceso, porque controla la conformidad de la entrega"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Recepción es cliente interno de compras porque recibe y utiliza su salida. Que luego trate con un proveedor externo no cambia esa relación interna."
     },
     {
       "id": "9",
-      "question": "¿Quién es el cliente externo principal de un proceso hospitalario de emergencia?",
-      "options": ["El departamento de recepción", "El personal de enfermería", "El paciente atendido", "El departamento de expedientes"],
+      "question": "En telemedicina, una aseguradora paga el servicio, el médico ejecuta la consulta y el paciente recibe el diagnóstico. Para definir la calidad clínica del proceso, ¿quién es el cliente externo principal?",
+      "options": [
+        "La aseguradora, porque financia la atención",
+        "El médico, porque utiliza la plataforma",
+        "El paciente, porque recibe el resultado clínico del proceso",
+        "El área de facturación, porque convierte la consulta en ingreso"
+      ],
       "correctAnswer": 2,
-      "explanation": "El paciente recibe el resultado final de la atención y no pertenece a la estructura interna del hospital."
+      "explanation": "Puede haber varios interesados, pero para la calidad clínica el paciente es el cliente principal porque recibe el diagnóstico y el efecto de la atención."
     },
     {
       "id": "10",
-      "question": "¿Cuál situación describe mejor a un cliente interno?",
-      "options": ["Un consumidor recibe su compra", "Logística recibe un pedido empacado para distribuirlo", "Un paciente recibe tratamiento", "Una empresa contrata un servicio de consultoría"],
-      "correctAnswer": 1,
-      "explanation": "Logística recibe el resultado de otra área de la misma empresa para continuar el proceso."
+      "question": "Producción entrega lotes terminados a control de calidad. Un lote rechazado vuelve a producción para retrabajo. ¿Cuál afirmación describe correctamente los roles entre ambas áreas?",
+      "options": [
+        "Control de calidad siempre es proveedor y producción siempre es cliente",
+        "Producción es cliente externo porque recibe una decisión independiente",
+        "Los roles cambian según la transferencia: calidad es cliente al recibir el lote y proveedor al emitir el dictamen",
+        "No existe relación cliente-proveedor porque ambas áreas pertenecen a la empresa"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Los roles se determinan por cada intercambio. Calidad consume el lote de producción y luego provee un dictamen que producción utiliza."
     },
     {
       "id": "11",
-      "question": "Una empresa establece como estrategia reducir los retrasos de entrega. ¿Cuál proceso está mejor alineado con esa estrategia?",
-      "options": ["Ampliar el formato de las facturas", "Optimizar la preparación y distribución de pedidos", "Cambiar el uniforme del personal administrativo", "Aumentar los niveles jerárquicos"],
+      "question": "La estrategia exige reducir entregas tardías sin incrementar inventario. El diagnóstico muestra que el mayor retraso ocurre esperando la aprobación manual de rutas. ¿Qué intervención está mejor alineada?",
+      "options": [
+        "Aumentar inventario de productos de alta rotación",
+        "Automatizar reglas de aprobación y gestionar excepciones de ruta",
+        "Medir únicamente el tiempo total de entrega al cierre del mes",
+        "Contratar más personal de empaque aunque esa etapa cumple su tiempo objetivo"
+      ],
       "correctAnswer": 1,
-      "explanation": "Preparar y distribuir pedidos determina directamente el tiempo de entrega y, por tanto, los retrasos."
+      "explanation": "La intervención actúa sobre el cuello de botella identificado y respeta la restricción de no elevar inventario. Medir no corrige por sí solo y aumentar capacidad fuera del cuello no resuelve la demora."
     },
     {
       "id": "12",
-      "question": "¿Cuál afirmación diferencia correctamente la estrategia de los procesos?",
-      "options": ["La estrategia ejecuta tareas y los procesos establecen metas", "La estrategia indica qué lograr y los procesos cómo lograrlo", "La estrategia mide resultados y los procesos eliminan los KPI", "No existe diferencia entre ambos conceptos"],
+      "question": "Una organización declara como meta aumentar la retención de clientes. Un equipo propone rediseñar el proceso de reclamos, pero no define qué resultado del proceso cambiará. ¿Qué falta para demostrar alineación estratégica?",
+      "options": [
+        "Documentar todas las tareas actuales con mayor detalle",
+        "Vincular una salida medible del proceso con la retención esperada",
+        "Asignar más responsables jerárquicos al proceso",
+        "Sustituir los indicadores operativos por la meta estratégica"
+      ],
       "correctAnswer": 1,
-      "explanation": "La estrategia define el resultado esperado; los procesos organizan las actividades necesarias para alcanzarlo."
+      "explanation": "La alineación requiere una relación verificable entre el resultado del proceso y el objetivo estratégico, no solo rediseñar tareas o repetir la meta."
     },
     {
       "id": "13",
-      "question": "Si el objetivo estratégico es mejorar la satisfacción del cliente, ¿cuál sería el KPI más directamente relacionado?",
-      "options": ["Número de escritorios administrativos", "Índice de satisfacción del cliente", "Cantidad de departamentos", "Antigüedad promedio del personal"],
+      "question": "El objetivo es disminuir abandonos durante una solicitud digital. ¿Cuál KPI permite localizar mejor el punto del proceso que debe mejorarse?",
+      "options": [
+        "Porcentaje total de solicitudes finalizadas por mes",
+        "Tasa de abandono en cada etapa del formulario",
+        "Tiempo promedio de procesamiento de solicitudes completadas",
+        "Cantidad acumulada de usuarios registrados"
+      ],
       "correctAnswer": 1,
-      "explanation": "El índice de satisfacción mide directamente la percepción del cliente respecto del objetivo estratégico."
+      "explanation": "La tasa por etapa no solo mide el abandono, sino que permite ubicar dónde ocurre. La tasa total muestra el problema, pero ofrece menos capacidad diagnóstica."
     },
     {
       "id": "14",
-      "question": "¿Cuál indicador sería más apropiado para controlar errores en el despacho?",
-      "options": ["Porcentaje de pedidos incorrectos", "Total de ventas anuales", "Número de empleados contratados", "Cantidad de proveedores registrados"],
-      "correctAnswer": 0,
-      "explanation": "El porcentaje de pedidos incorrectos cuantifica específicamente los errores producidos durante el despacho."
+      "question": "Un despacho reporta 2% de pedidos con error. Sin embargo, algunos pedidos contienen un artículo y otros cincuenta. ¿Qué indicador permite comparar mejor la calidad entre periodos con mezclas distintas?",
+      "options": [
+        "Pedidos incorrectos divididos entre pedidos despachados",
+        "Artículos incorrectos divididos entre artículos despachados",
+        "Ventas del periodo divididas entre pedidos despachados",
+        "Pedidos revisados divididos entre empleados de despacho"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cuando cambia la cantidad de artículos por pedido, medir defectos por artículo controla mejor la exposición real a error que medir solo pedidos."
     },
     {
       "id": "15",
-      "question": "Un supermercado desea reducir el tiempo que los clientes permanecen en la fila. ¿Cuál KPI debería utilizar?",
-      "options": ["Rotación anual del personal", "Costo total del inventario", "Tiempo promedio de espera en caja", "Porcentaje de productos disponibles"],
+      "question": "Un supermercado quiere reducir esperas, pero el promedio es bajo porque muchas cajas atienden rápido mientras unas pocas generan filas extremas. ¿Qué KPI revela mejor el incumplimiento percibido por los clientes afectados?",
+      "options": [
+        "Promedio general de espera de todas las cajas",
+        "Mediana del tiempo de espera por día",
+        "Percentil 95 del tiempo de espera",
+        "Número total de transacciones procesadas"
+      ],
       "correctAnswer": 2,
-      "explanation": "El tiempo promedio de espera mide exactamente cuánto permanece el cliente en la fila de caja."
+      "explanation": "El percentil 95 muestra la espera que casi todos los clientes no deberían superar y hace visibles los casos extremos que un promedio puede ocultar."
     },
     {
       "id": "16",
-      "question": "¿Cuál es la principal utilidad de un KPI en la toma de decisiones?",
-      "options": ["Sustituir completamente el análisis gerencial", "Proporcionar evidencia para comparar resultados con objetivos", "Garantizar que nunca ocurran errores", "Eliminar automáticamente los problemas detectados"],
+      "question": "Un KPI de entregas a tiempo mejora de 88% a 96%, pero durante el mismo periodo la empresa amplió en dos días el plazo prometido. ¿Cuál conclusión es metodológicamente válida?",
+      "options": [
+        "El proceso necesariamente se volvió más rápido porque aumentó el KPI",
+        "El resultado no puede interpretarse sin controlar el cambio en la definición de cumplimiento",
+        "La estrategia se cumplió porque todo KPI superior a 95% demuestra mejora",
+        "El cambio de meta no importa si la fórmula del porcentaje sigue siendo la misma"
+      ],
       "correctAnswer": 1,
-      "explanation": "Un KPI aporta datos comparables para determinar si el desempeño real alcanza el objetivo establecido."
+      "explanation": "Cambiar el plazo altera el criterio de éxito. Aunque la fórmula sea idéntica, los periodos ya no son comparables sin ajustar o explicar la nueva definición."
     },
     {
       "id": "17",
-      "question": "Una empresa automatiza un proceso y los empleados temen perder sus puestos. Esta situación representa:",
-      "options": ["Alineación estratégica", "Resistencia al cambio", "Transformación transaccional", "Mejora del rendimiento"],
+      "question": "Tras anunciar una automatización, el personal domina la nueva herramienta en capacitación, pero continúa usando hojas paralelas porque teme perder control sobre las excepciones. ¿Cuál causa de resistencia predomina?",
+      "options": [
+        "Falta de conocimiento técnico sobre la herramienta",
+        "Pérdida percibida de autonomía y control",
+        "Ausencia total de comunicación sobre el cambio",
+        "Incapacidad del sistema para registrar operaciones normales"
+      ],
       "correctAnswer": 1,
-      "explanation": "El temor a perder el puesto genera rechazo o preocupación frente a la nueva forma de trabajo."
+      "explanation": "El personal ya sabe utilizar la herramienta. La conducta paralela responde al temor de perder control, por lo que más capacitación técnica no atacaría la causa principal."
     },
     {
       "id": "18",
-      "question": "¿Cuál acción sería más efectiva para reducir la resistencia causada por falta de conocimientos?",
-      "options": ["Ocultar los cambios hasta la implementación", "Aplicar sanciones antes de capacitar", "Capacitar y acompañar al personal", "Eliminar todos los indicadores"],
-      "correctAnswer": 2,
-      "explanation": "La capacitación resuelve la falta de conocimientos y el acompañamiento permite aplicarlos durante la transición."
+      "question": "Una implementación falla porque los supervisores permiten seguir usando el proceso anterior cuando aumenta la carga de trabajo. ¿Qué acción aborda mejor el problema?",
+      "options": [
+        "Repetir la presentación inicial sobre beneficios",
+        "Definir criterios de transición, retirar gradualmente el proceso anterior y dar soporte en picos",
+        "Aplicar sanciones inmediatas sin revisar la capacidad operativa",
+        "Esperar a que cada equipo adopte el cambio a su propio ritmo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El problema combina falta de disciplina de transición y presión operativa. Se necesita una ruta clara de retiro del método anterior junto con soporte para sostener el nuevo proceso."
     },
     {
       "id": "19",
-      "question": "¿Por qué el compromiso gerencial es fundamental durante un cambio organizacional?",
-      "options": ["Porque evita que los trabajadores participen", "Porque proporciona liderazgo, recursos y seguimiento", "Porque elimina la necesidad de medir resultados", "Porque garantiza que el cambio no tenga costos"],
+      "question": "La gerencia aprueba públicamente un cambio, pero no reasigna tiempo, presupuesto ni autoridad para resolver bloqueos. ¿Qué componente del compromiso gerencial está ausente?",
+      "options": [
+        "La comunicación simbólica del patrocinio",
+        "La provisión efectiva de recursos y capacidad de decisión",
+        "La definición técnica de cada tarea operativa",
+        "La eliminación de toda resistencia individual"
+      ],
       "correctAnswer": 1,
-      "explanation": "La gerencia sostiene el cambio al definir dirección, asignar recursos y verificar su avance."
+      "explanation": "El apoyo verbal no basta. El compromiso se materializa al proveer recursos, remover obstáculos y otorgar autoridad para ejecutar el cambio."
     },
     {
       "id": "20",
-      "question": "Un médico administra un tratamiento que mejora directamente la condición del paciente. Esta actividad:",
-      "options": ["Agrega valor al cliente", "Agrega únicamente valor al negocio", "No agrega valor", "Es un desperdicio necesario"],
-      "correctAnswer": 0,
-      "explanation": "El tratamiento modifica directamente la condición que el paciente necesita mejorar, por lo que crea valor para él."
+      "question": "En una clínica, el paciente completa dos veces la misma historia porque los sistemas no comparten datos. El segundo registro es obligatorio para que farmacia dispense el medicamento. ¿Cómo debe clasificarse en el estado actual?",
+      "options": [
+        "Valor para el cliente, porque habilita la entrega del medicamento",
+        "Valor para el negocio, porque todo requisito interno agrega valor",
+        "No agrega valor; es un retrabajo causado por una falla de integración que debe eliminarse",
+        "Valor para el cliente y el negocio simultáneamente, porque contiene información clínica"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Aunque hoy sea necesario para sortear una limitación interna, repetir datos no transforma el servicio de forma valorada ni constituye una exigencia externa; es desperdicio eliminable."
     },
     {
       "id": "21",
-      "question": "El hospital documenta la atención en el expediente por razones legales y de trazabilidad. Esta actividad:",
-      "options": ["Agrega valor directo a la salud del paciente", "Agrega valor al negocio", "No agrega ningún tipo de valor", "Es solamente una transformación física"],
+      "question": "Una revisión regulatoria no cambia el producto ni es valorada por el cliente, pero vender sin ella implicaría incumplir la ley. ¿Cuál clasificación es más precisa?",
+      "options": [
+        "Agrega valor al cliente porque permite que el producto exista",
+        "Agrega valor al negocio por ser necesaria para operar conforme a regulación",
+        "No agrega valor y debe eliminarse sin sustituirla",
+        "Agrega valor al cliente solo cuando la revisión detecta un defecto"
+      ],
       "correctAnswer": 1,
-      "explanation": "El registro no mejora directamente la salud, pero es necesario para cumplir obligaciones legales y asegurar trazabilidad."
+      "explanation": "Es una actividad necesaria para el negocio: no cumple los criterios de valor directo para el cliente, pero sostiene el cumplimiento legal de la operación."
     },
     {
       "id": "22",
-      "question": "¿Cuál actividad no agrega valor y debería reducirse o eliminarse?",
-      "options": ["Diagnosticar al paciente", "Empacar correctamente un producto", "Repetir el registro de los mismos datos por un error", "Documentar una transacción obligatoria"],
-      "correctAnswer": 2,
-      "explanation": "Reingresar datos por un error es retrabajo: consume recursos sin aportar un resultado adicional al cliente o al negocio."
+      "question": "Un pedido espera cuatro horas antes de empaque porque se procesa en lotes. Empacar cambia el estado del pedido de una forma que el cliente requiere; la espera no lo modifica. ¿Cuál análisis es correcto?",
+      "options": [
+        "Empaque y espera agregan valor porque ambos forman parte del tiempo total",
+        "Empaque agrega valor al cliente y la espera es una actividad sin valor",
+        "La espera agrega valor al negocio porque facilita la planificación por lotes",
+        "Ninguna actividad agrega valor porque el cliente solo valora la entrega"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Empacar transforma el pedido según una necesidad del cliente; permanecer inmóvil no lo transforma. La conveniencia operativa de agrupar no convierte la espera en valor."
     },
     {
       "id": "23",
-      "question": "Una actividad no modifica directamente el producto, pero es obligatoria para cumplir una regulación. ¿Cómo se clasifica?",
-      "options": ["Agrega valor al cliente", "Agrega valor al negocio", "No agrega valor en ningún sentido", "Siempre es una transformación física"],
-      "correctAnswer": 1,
-      "explanation": "Aunque el cliente no perciba un beneficio directo, cumplir la regulación permite que la organización opere legalmente."
+      "question": "Una verificación interna fue creada años atrás para reducir fraude. Hoy el control automático cubre el mismo riesgo y la norma no exige la revisión manual. ¿Cómo debe tratarse la revisión manual?",
+      "options": [
+        "Mantenerla como valor para el negocio porque originalmente controlaba un riesgo",
+        "Clasificarla como valor para el cliente porque aumenta la seguridad",
+        "Evaluarla como actividad redundante sin valor y candidata a eliminación",
+        "Conservarla hasta que el cliente solicite explícitamente retirarla"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Si el riesgo ya está cubierto y no existe obligación externa, la revisión duplica un control sin aportar un resultado adicional. Su justificación histórica no basta para conservarla."
     },
     {
       "id": "24",
-      "question": "Una cadena registra disponibilidades de 93%, 94%, 96% y 97%. ¿Cuántas observaciones son defectos si la meta es ≥94%?",
-      "options": ["0", "1", "2", "3"],
+      "question": "La meta de disponibilidad es al menos 94%. Se observan 93.8%, 94.0%, 94.1%, 92.9%, 96.0% y 93.99%. Si cada visita es una unidad, ¿cuál es el rendimiento?",
+      "options": [
+        "33.33%",
+        "50.00%",
+        "66.67%",
+        "83.33%"
+      ],
       "correctAnswer": 1,
-      "explanation": "Solo 93% está por debajo de la meta de 94%; las observaciones de 94%, 96% y 97% sí cumplen."
+      "explanation": "Cumplen 94.0%, 94.1% y 96.0%: 3 de 6 visitas. El rendimiento es 3/6 = 50%. Los valores 93.8% y 93.99% siguen debajo del límite."
     },
     {
       "id": "25",
-      "question": "Una cadena obtiene un promedio de 95%, pero varias visitas están por debajo del 94%. ¿Cuál conclusión es correcta?",
-      "options": ["Cumple la meta en todas las visitas porque el promedio supera 94%", "Todas las observaciones son defectos", "El promedio cumple, pero no se alcanzó la meta en todas las visitas", "El promedio no puede utilizarse para ningún análisis"],
+      "question": "Dos cadenas promedian 95% de disponibilidad. La cadena A cumple la meta de 94% en 18 de 20 visitas; la cadena B cumple en 15 de 20. Si la especificación se evalúa por visita, ¿qué conclusión es correcta?",
+      "options": [
+        "Tienen el mismo desempeño porque sus promedios son iguales",
+        "La cadena B tiene mayor rendimiento porque puede compensar defectos con valores altos",
+        "La cadena A tiene mayor rendimiento, aunque ambas compartan el mismo promedio",
+        "No puede calcularse rendimiento sin conocer cada porcentaje individual"
+      ],
       "correctAnswer": 2,
-      "explanation": "El promedio global supera 94%, pero ese promedio no elimina las visitas individuales que quedaron debajo de la meta."
+      "explanation": "El rendimiento es la proporción de visitas conformes: A = 90% y B = 75%. Un mismo promedio no implica igual cumplimiento por observación."
     },
     {
       "id": "26",
-      "question": "En 80 visitas, 68 alcanzaron la disponibilidad mínima. ¿Cuáles son el rendimiento y el DPMO, suponiendo una oportunidad por visita?",
-      "options": ["85% y 150,000", "68% y 320,000", "15% y 850,000", "85% y 120,000"],
+      "question": "En 120 visitas se evalúan dos oportunidades independientes: disponibilidad y exhibición. Se registran 18 defectos de disponibilidad y 12 de exhibición. ¿Cuál es el DPMO?",
+      "options": [
+        "125,000",
+        "150,000",
+        "250,000",
+        "875,000"
+      ],
       "correctAnswer": 0,
-      "explanation": "El rendimiento es 68/80 = 85%. Hubo 12 defectos, así que el DPMO es 12/80 × 1,000,000 = 150,000."
+      "explanation": "Hay 30 defectos y 120 × 2 = 240 oportunidades. DPMO = 30/240 × 1,000,000 = 125,000."
     },
     {
       "id": "27",
-      "question": "Se encontraron 12 defectos en 200 unidades y se evaluaron 2 oportunidades de defecto por unidad. ¿Cuál es el DPMO?",
-      "options": ["60,000", "30,000", "120,000", "3,000"],
+      "question": "Un proceso evalúa 250 unidades con 4 oportunidades por unidad. Su DPMO es 18,000. ¿Cuántos defectos se observaron?",
+      "options": [
+        "9",
+        "18",
+        "45",
+        "72"
+      ],
       "correctAnswer": 1,
-      "explanation": "DPMO = 12 / (200 × 2) × 1,000,000 = 30,000."
+      "explanation": "Las oportunidades totales son 250 × 4 = 1,000. Defectos = 18,000 × 1,000 / 1,000,000 = 18."
     },
     {
       "id": "28",
-      "question": "Un proceso presenta un DPMO de 250,000 en 80 visitas, con una oportunidad por visita. ¿Cuántos defectos se observaron?",
-      "options": ["15", "20", "25", "32"],
-      "correctAnswer": 1,
-      "explanation": "Defectos = 250,000 × 80 / 1,000,000 = 20."
+      "question": "El proceso A registra 20 defectos en 100 unidades con una oportunidad por unidad. El proceso B registra 30 defectos en 100 unidades con dos oportunidades por unidad. ¿Cuál comparación es correcta?",
+      "options": [
+        "A tiene 200,000 DPMO y B 150,000 DPMO; B presenta mejor desempeño por oportunidad",
+        "A tiene 200,000 DPMO y B 300,000 DPMO; A presenta mejor desempeño",
+        "Ambos tienen 200,000 DPMO porque evaluaron la misma cantidad de unidades",
+        "B presenta peor desempeño porque acumuló más defectos absolutos"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A: 20/(100×1)×1,000,000 = 200,000. B: 30/(100×2)×1,000,000 = 150,000. El número absoluto de defectos no basta si cambian las oportunidades."
     },
     {
       "id": "29",
-      "question": "Dos procesos tienen rendimientos de 70% y 90%, respectivamente. ¿Cuál afirmación es correcta?",
-      "options": ["El proceso de 70% tendrá menor DPMO y mayor sigma", "Ambos tendrán necesariamente el mismo nivel sigma", "El proceso de 90% tendrá menor DPMO y mayor sigma", "El rendimiento no tiene relación con el nivel sigma"],
-      "correctAnswer": 2,
-      "explanation": "Un rendimiento mayor implica menos defectos, menor DPMO y, en consecuencia, un nivel sigma superior."
+      "question": "Un equipo reduce el DPMO de 120,000 a 80,000, pero al mismo tiempo redefine cada unidad de 2 a 4 oportunidades. ¿Qué debe verificarse antes de afirmar que aumentó el nivel sigma?",
+      "options": [
+        "Que también haya aumentado el número de unidades inspeccionadas",
+        "Que la definición de oportunidad sea comparable y represente el mismo riesgo en ambos periodos",
+        "Que el promedio de defectos por unidad sea exactamente igual",
+        "Que el proceso tenga al menos un defecto en cada periodo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DPMO y sigma solo son comparables si las oportunidades conservan un significado equivalente. Duplicarlas artificialmente puede reducir el DPMO sin mejorar el proceso."
     },
     {
       "id": "30",
-      "question": "Una empresa reduce los defectos sin cambiar el número de oportunidades evaluadas. ¿Qué comportamiento debería observarse?",
-      "options": ["Menor rendimiento, mayor DPMO y menor sigma", "Mayor rendimiento, menor DPMO y mayor sigma", "Mayor rendimiento, mayor DPMO y menor sigma", "El rendimiento y el nivel sigma permanecerán iguales"],
-      "correctAnswer": 1,
-      "explanation": "Con las mismas oportunidades, reducir defectos eleva el rendimiento, disminuye el DPMO y aumenta el nivel sigma."
+      "question": "Un proceso tiene 92% de rendimiento y otro 95%. Ambos usan la misma definición de unidad, defecto y oportunidades. ¿Cuál afirmación es necesariamente válida?",
+      "options": [
+        "El proceso de 95% tiene menor proporción de defectos y un nivel sigma mayor",
+        "El proceso de 95% tiene menos defectos absolutos, sin importar el volumen evaluado",
+        "El proceso de 92% puede tener menor DPMO porque su rendimiento está más cerca de 100%",
+        "Ambos tienen el mismo nivel sigma si sus promedios de desempeño coinciden"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bajo definiciones equivalentes, mayor rendimiento implica menor tasa de defectos y mayor nivel sigma. No permite asegurar menos defectos absolutos si los volúmenes son distintos."
     }
   ]
 }
